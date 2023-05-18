@@ -11,9 +11,8 @@ public class StatsService {
     }
 
     public int getAverageSales(int[] sales) {
-        int sum = 0;
-        for (int i = 0; i < sales.length; i++) {
-            sum += sales[i];
+        int sum = getTotalSales(sales);
+        for(int i = 0; i < sales.length; i++) {
         }
         return sum / sales.length;
 
